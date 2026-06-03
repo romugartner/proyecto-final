@@ -1,0 +1,82 @@
+//llamar a variables
+@use "../utilities/variables" as *;
+//llamar a mixin
+@use "../utilities/mixin" as *;
+
+//propiedades de header
+header{
+    @include flex;
+    nav{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+        div{
+        
+        }
+        
+        button{
+
+        }
+        span{
+            background-color: azure;
+        }
+
+}
+
+header {
+    .menu-color{
+        color: $color-tipografia;
+    }
+    
+}
+
+//propiedades de main
+main{
+    height: 80vh;
+    display: grid;
+    @include grilla (1fr, repeat(3, 25%));
+    div{
+        img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+     }
+
+    }
+    .imagen-02, .imagen-05{
+        display: none;
+    }
+
+}
+
+//propiedades de section
+section{
+    @include flex;
+    text-align: center;
+    margin-bottom: 1rem;
+    column-gap: 1rem;
+    margin: 13px;
+    div{
+        div{
+            background-color: aquamarine;
+        
+            
+        }
+        div{
+            p:active{
+                background-color: blue;
+            }
+        }
+    }
+}
+
+//propiedades de footer
+
+footer{
+    p{
+        color: $color-tipografia;
+        text-align: center;
+    }
+}
+
+
+

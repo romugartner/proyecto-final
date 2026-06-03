@@ -1,0 +1,18 @@
+//comunicar las variables
+@use "../utilities/variables" as *;
+
+//comunicar el mixin
+@use "../utilities/mixin" as *;
+
+// propiedades de tablet 
+@media screen and (min-width: 768px){
+    main{
+        display: grid;
+        @include grilla (repeat(2, 1fr), repeat(2, 40%));
+        row-gap: 15px;
+        .imagen-04{
+            grid-column: 1/3;
+        }
+    }
+
+}

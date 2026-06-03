@@ -1,0 +1,8 @@
+//llamar al reset. No se agrega el as * porque la funcion que cumple el style es de conectar unicamente
+@use "base/reset";
+// llamar a home
+@use "pages/home";
+//llamar a tablet
+@use "layout/mq-tablet";
+//llamar a desktop
+@use "layout/mq-desktop";

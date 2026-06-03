@@ -1,0 +1,57 @@
+//comunicar las variables
+@use "../utilities/variables" as *;
+
+//comunicar el mixin
+@use "../utilities/mixin" as *;
+
+@media screen and (min-width: 1024px){
+     
+    main{
+
+        display: grid;
+        @include grilla (repeat(3, 1fr), 30% 30% 10%);
+        row-gap: 1rem;
+
+        .imagen-01{
+        grid-column: 1/2;
+        grid-row: 1/3;
+
+        }
+
+        .imagen-02{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+        }
+
+        .imagen-03{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        
+        }
+
+        .imagen-04{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        
+        }
+
+       .imagen-05{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        justify-content: center;
+
+        }
+
+
+    }
+}
+
