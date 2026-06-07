@@ -51,8 +51,10 @@ section {
   column-gap: 1rem;
   margin: 13px;
 }
-section div div {
+section div div:hover {
   background-color: aquamarine;
+  transition: 2s;
+  transform: rotate(360deg);
 }
 section div div p:active {
   background-color: blue;

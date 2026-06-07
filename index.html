@@ -85,7 +85,7 @@
 
     <!-- propiedades del footer -->
     <footer>    
-
+            
             <p>Todos los derechos reservados</p>
             
     </footer>
@@ -96,7 +96,7 @@
 </html>
 
 
-<!-- carpeta base
+ <!-- carpeta base
  lo vamos a usar para poder contener los archivos basicos, ejemplo el reset , estilos globales
 
  la carpeta layout
@@ -106,4 +106,31 @@
  me va a servir para poder trabajar los estilos de los html secundarios
 
  la carpeta utilities
- me va a servir para las utilidades de sass como mixin , exten, estrucutra -->
+ me va a servir para las utilidades de sass como mixin , exten, estrucutra 
+
+ la propiedad "transition" nos siver para los segundos, la propiedad transform para mover
+ por ejemple 
+        transition-duration: 2s;
+        transform: rotate(200px); -->
+<!-- 
+animaciones: como vincular
+primero agregarle el nombre a la clase que estemos trabajando en CSS.
+Ej: .caja:hover{
+    color:blue;
+    animation: moverDerecha 3s ease infinite;
+}
+
+luego creas el keyframe
+Ej: @keyframe moverDerecha{
+from{
+    transition-duration: 0s;
+    transform: rotate(0)
+        
+
+to{
+    transition-duration: 2s;
+    transform: rotate(180deg)
+        
+}
+} -->
+

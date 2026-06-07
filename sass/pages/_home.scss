@@ -39,6 +39,8 @@ main{
         height: 100%;
         width: 100%;
         object-fit: cover;
+        
+        
      }
 
     }
@@ -56,14 +58,17 @@ section{
     column-gap: 1rem;
     margin: 13px;
     div{
-        div{
+        div:hover{
             background-color: aquamarine;
+            transition: 2s;
+            transform: rotate(360deg);
         
             
         }
         div{
             p:active{
                 background-color: blue;
+              
             }
         }
     }
@@ -74,7 +79,7 @@ section{
 footer{
     p{
         color: $color-tipografia;
-        text-align: center;
+        text-align: center;   
     }
 }
 
