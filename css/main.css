@@ -45,17 +45,43 @@ main {
   grid-template-rows: repeat(3, 25%);
   row-gap: 10px;
   align-content: center;
-  margin: 1rem;
+  background-color: burlywood;
 }
-main div img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+main form {
+  display: none;
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  background-color: black;
+  color: whitesmoke;
+  height: 450px;
+  text-align: center;
+  margin-left: 20px;
+}
+main form h2 {
+  background-color: bisque;
+  text-align: center;
+  border-radius: 10px;
+  color: red;
+}
+main form div {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+main form input {
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
 }
 main div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 main div div img {
   height: 500px;
@@ -100,7 +126,6 @@ footer p {
     grid-template-rows: repeat(2, 40%);
     row-gap: 10px;
     align-content: center;
-    margin: 1rem;
     row-gap: 15px;
   }
   main .imagen-04 {
@@ -114,7 +139,6 @@ footer p {
     grid-template-rows: 30% 30% 10%;
     row-gap: 10px;
     align-content: center;
-    margin: 1rem;
     row-gap: 1rem;
   }
   main .imagen-01 {
