@@ -3,51 +3,98 @@
 //llamar a mixin
 @use "../utilities/mixin" as *;
 
+
 //propiedades de header
 header{
-    @include flex;
+    display: block;
+    background-color: #0e0d0d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    .title{
+        color:bisque;
+        text-align: center;
+        padding-top: 20px;
+     
+    }
+    
+
+    .navegador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+           
+    }
     nav{
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 50px;
+        font-size: 20px;
+       
+        
     }
         div{
-        
+            img{
+                width: 150px;
+                height: 150px;
+            }
         }
         
         button{
 
         }
-        span{
-            background-color: azure;
-        }
+            span{
+                background-color: azure;
+            }
 
 }
 
-header {
+
+header{
     .menu-color{
-        color: $color-tipografia;
+       color: black;
+       background-color:bisque;
+       border-radius: 20px;
+       padding: 10px;
+      
     }
-    
+
 }
 
 //propiedades de main
+
+
 main{
+    
+    
     height: 80vh;
     display: grid;
-    @include grilla (1fr, repeat(3, 25%));
+    @include grilla (3fr, repeat(3, 25%));
+    
+    
+   
     div{
         img{
         height: 100%;
         width: 100%;
         object-fit: cover;
-        
-        
-     }
-
+        }
+    
+    @include flex;
+    div{  
+        img{
+            height: 500px;
+            width: 300px;
+            margin-left: 50px;
+            margin-top: 300px;     
+        } 
+    
     }
+    
+    }
+    
     .imagen-02, .imagen-05{
         display: none;
     }
 
+    
 }
 
 //propiedades de section
@@ -77,10 +124,11 @@ section{
 //propiedades de footer
 
 footer{
-    p{
+    background-color: #0e0d0d;
+      p{
         color: $color-tipografia;
         text-align: center;   
-    }
+        }
 }
 
 
