@@ -4,11 +4,6 @@
     align-items: center;
 }
 
-@mixin flex-productos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 @mixin grilla ($column, $row){
     grid-template-columns: $column;

@@ -69,11 +69,12 @@ main{
     
     
     height: 80vh;
+    height: 1000px;
     display: grid;
     @include grilla (3fr, repeat(3, 25%));
-    background-color: burlywood;
+    background-color: bisque;
     
-    
+    //estilo de formulario en contacto
         form{
         display: none;
         display: flex;
@@ -110,31 +111,49 @@ main{
             }
 
                 
-    }
-   
-    div{
-        
+         }
+
+         //estilos de titulo
+         .titulo{
+            display: none;
+            display: flex;
+            flex-direction: column;
+            
+        h2{
+            color:blue;
+            text-align: center;
+            
+        }
+
+         p{
+            background-color: black;
+            color: bisque;
+            text-align: center;
+            border-radius:30px;
+            padding:30px;
+            font-size: 20px
+         }
+        }
+    
+   //estilo de imagenes en index
+    div{    
     @include flex;
+     
+    
         img{
         height: 100%;
         width: 100%;
         object-fit: cover;
-    
         }
-    
-    div{ 
-    
-        img{
-            height: 500px;
-            width: 300px;
-            margin-left: 50px;
-            margin-top: 300px;     
-        } 
-    
+        
+          
+    }
+    div{
+     
     }
     
-    }
-    
+
+
     .imagen-02, .imagen-05{
         display: none;
     }
@@ -146,12 +165,19 @@ main{
 section{
     @include flex;
     text-align: center;
-    margin-bottom: 1rem;
     column-gap: 1rem;
-    margin: 13px;
+    background-color: bisque;
+    margin-top: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+
+    .card{
+        background-color: bisque;
+    }
     div{
+        
         div:hover{
-            background-color: aquamarine;
+            background-color: plum;
             transition: 2s;
             transform: rotate(360deg);
         
@@ -159,7 +185,7 @@ section{
         }
         div{
             p:active{
-                background-color: blue;
+                background-color: bisque;
               
             }
         }
@@ -171,9 +197,13 @@ section{
 footer{
     background-color: #0e0d0d;
     
+
       p{
         color: $color-tipografia;
-        text-align: center;   
+        text-align: center; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: -12px
         }
 }
 
