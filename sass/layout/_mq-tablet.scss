@@ -29,5 +29,132 @@
             
         }
         
-      }
     }
+    //estilos al main de product
+    .productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 10%);
+    width: 760px;
+    height: 600px;
+    margin-top: -200px;
+    margin-left: 3px;
+
+
+    h2{
+        grid-column: 1/4;
+    }
+    p{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        padding: 10px;
+            
+    }   
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .oferta-uno{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .oferta-dos{
+        grid-column: 2/3;
+    }
+    .oferta-tres{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        height: 450px;
+    }
+    .oferta-cuatro{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 229px;
+        
+    }
+    .oferta-cinco{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+
+    }
+    //estilos al main de contact
+    .main-contact{
+        height: 600px;
+        
+        .form{
+        margin-left: 220px;
+        margin-top: -100px;
+       
+        }
+    }
+
+    //estilos al main de service
+    .main-service{
+    display: block; 
+    height: 700px;
+    
+        .horarios{
+        margin-left: 190px;
+        }
+
+        table{
+        margin-left: 205px;
+        margin-top: 10px;
+        }
+    }
+
+    //estilos al main de others
+    .main-other{
+        height: 800px;
+
+        .visiblidad-dos{
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 10%);
+        width: 768px;
+        height: 650px;
+        margin-left: 3px;
+        
+            
+        h2{
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }   
+      
+     
+
+        .imagen-01{
+            grid-column: 1/2;
+            grid-row: 2/5;
+            height: 550px;
+        }
+
+        .imagen-03{
+            grid-column: 3/4;
+            grid-row: 2/5;
+            height: 550px;
+           
+            
+        
+        }
+        .imagen-04{
+            grid-column: 2/3;
+            grid-row: 2/4;
+            height: 540px;
+            margin: 10px;
+            margin-top: 10px;
+         
+        
+            
+        }
+     
+    }
+    
+
+    }
+
+}
