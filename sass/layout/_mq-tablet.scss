@@ -7,12 +7,27 @@
 // propiedades de tablet 
 @media screen and (min-width: 768px){
     main{
+
+        height: 1000px;
+        .titulo{
+           grid-column: 1/3;
+           
+        }
         display: grid;
-        @include grilla (repeat(2, 1fr), repeat(2, 40%));
-        row-gap: 15px;
+        @include grilla (repeat(2, 1fr), repeat(2, 25%));
+        row-gap: 5px;
+        margin-bottom: -10px;
+    
+     
+        .imagen-01{
+            grid-column: 1/2;
+                  
+        }
+
         .imagen-04{
             grid-column: 1/3;
+            
         }
+        
+      }
     }
-
-}
