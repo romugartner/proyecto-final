@@ -362,14 +362,22 @@ footer img {
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30% 30% 10%;
+    grid-template-rows: 10% 30% 30% 10%;
     row-gap: 10px;
     align-content: center;
     row-gap: 1rem;
   }
+  main .titulo {
+    display: none;
+    display: grid;
+    grid-column: 1/4;
+  }
+  main .titulo p {
+    padding: 10px;
+  }
   main .imagen-01 {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 2/3;
   }
   main .imagen-02 {
     display: block;
@@ -377,15 +385,18 @@ footer img {
     width: 100%;
     object-fit: cover;
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
   main .imagen-03 {
     grid-column: 3/4;
-    grid-row: 1/3;
+    grid-row: 2/3;
   }
   main .imagen-04 {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    display: none;
+    display: block;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    height: 300px;
   }
   main .imagen-05 {
     display: block;
@@ -393,8 +404,12 @@ footer img {
     width: 100%;
     object-fit: cover;
     grid-column: 1/4;
-    grid-row: 3/4;
+    grid-row: 4/5;
     justify-content: center;
+  }
+  main .productos {
+    margin-top: 0px;
+    margin-left: 550px;
   }
 }
 

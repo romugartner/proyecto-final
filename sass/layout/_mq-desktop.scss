@@ -9,13 +9,21 @@
     main{
 
         display: grid;
-        @include grilla (repeat(3, 1fr), 30% 30% 10%);
+        @include grilla (repeat(3, 1fr), 10%  30% 30% 10%);
         row-gap: 1rem;
-
+        //estilos de main de index
+        .titulo{
+            display: none;
+            display: grid;
+            grid-column: 1/4;
+                p{
+                    padding: 10px;
+                }
+        }
 
         .imagen-01{
         grid-column: 1/2;
-        grid-row: 1/3;
+        grid-row: 2/3;
 
         }
 
@@ -25,23 +33,22 @@
         width: 100%;
         object-fit: cover;
         grid-column: 2/3;
-        grid-row: 1/2;
+        grid-row: 2/3;
         
         }
 
         .imagen-03{
         grid-column: 3/4;
-        grid-row: 1/3;
-      
-       
+        grid-row: 2/3;
         
         }
 
         .imagen-04{
-        grid-column: 2/3;
-        grid-row: 2/3;
-      
-        
+            display: none;
+            display: block;
+            grid-column: 1/4;
+            grid-row: 3/4;
+            height: 300px;
         }
 
        .imagen-05{
@@ -50,15 +57,26 @@
         width: 100%;
         object-fit: cover;
         grid-column: 1/4;
-        grid-row: 3/4;
+        grid-row: 4/5;
         justify-content: center;
 
         }
 
+        //estilos de main de productos
+
+        .productos{
+            margin-top: 0px;
+            margin-left: 550px
+        }
+
+        //estilos de main de contact
         
-
-
+            
+            
+        
     }
+
+
   
 }
 
