@@ -69,14 +69,104 @@
             margin-left: 550px
         }
 
-        //estilos de main de contact
+     
+        }
+
+           //estilos de main de contact
+        .main-contact{
+            
+           
+        
+        .form{  
+            width: 900px;
+            margin-top: 25px;
+           margin-left: 500px;
         
             
             
-        
-    }
+            
+            h2{
+                border-radius: 30px;
+
+            }
+            div{
+              label{
+                margin-right: 100px;
+                font-size: 20px;
+              }
+            }
+        }
+        }
+            
+        //estilos de main de service
+        .main-service{
+       
+            .horarios{
+                margin-left: 770px;
+            }
+            table{
+                margin-left: 785px;
+            }
+         }
+
+         .main-other{
+            display: none;
+            height: 1200px;
+
+            div{
+                div{
+                    img{
+                        
+                       
+                    }
+                }
+            }
+            
+            .visiblidad-dos{
+                height: 800px;
+                margin-left: 550px;
+                margin-top: 20px;
+                width: 1000px;
+                height: 1000px;
+              
+
+                h2{
+                    grid-column: 1/4;
+                    grid-row: 1/2;
+
+                }
+
+                .imagen-01{
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+                    object-fit: cover;
+                    height: 100px;
+                }
+
+                .imagen-02{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+
+                .imagen-04{
+                grid-column: 2/3;
+                grid-row: 2/4;
+                height: 100px;
+                
+                }
+
+                .imagen-05{
+                    grid-row: 4/5;
+                    grid-column: 1/4;
+                    width: 940px;
+                }
+
+                
+
+                
+                }
+            }
+         }
 
 
-  
-}
-
+    

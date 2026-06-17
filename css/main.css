@@ -208,7 +208,7 @@ section {
   text-align: center;
   column-gap: 1rem;
   background-color: bisque;
-  margin-top: 18px;
+  margin-top: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
 }
@@ -218,6 +218,7 @@ section .card {
 section div div:hover {
   background-color: plum;
   transition: 2s;
+  margin-top: -10px;
   transform: rotate(360deg);
 }
 section div div p:active {
@@ -410,6 +411,59 @@ footer img {
   main .productos {
     margin-top: 0px;
     margin-left: 550px;
+  }
+  .main-contact .form {
+    width: 900px;
+    margin-top: 25px;
+    margin-left: 500px;
+  }
+  .main-contact .form h2 {
+    border-radius: 30px;
+  }
+  .main-contact .form div label {
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  .main-service .horarios {
+    margin-left: 770px;
+  }
+  .main-service table {
+    margin-left: 785px;
+  }
+  .main-other {
+    display: none;
+    height: 1200px;
+  }
+  .main-other .visiblidad-dos {
+    height: 800px;
+    margin-left: 550px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 1000px;
+  }
+  .main-other .visiblidad-dos h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .main-other .visiblidad-dos .imagen-01 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    object-fit: cover;
+    height: 100px;
+  }
+  .main-other .visiblidad-dos .imagen-02 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .main-other .visiblidad-dos .imagen-04 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    height: 100px;
+  }
+  .main-other .visiblidad-dos .imagen-05 {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    width: 940px;
   }
 }
 
