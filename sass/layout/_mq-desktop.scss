@@ -8,7 +8,7 @@
      
     main{
 
-        display: grid;
+        
         @include grilla (repeat(3, 1fr), 10%  30% 30% 10%);
         row-gap: 1rem;
         //estilos de main de index
